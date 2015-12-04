@@ -71,8 +71,7 @@ public class Pig {
 
                 if (input >= min && input <= max) { //if input is between the required min and max, change flag to true
                     valid = true;
-                }
-                else { //else display an error
+                } else { //else display an error
                     System.out.println("ERROR! Only enter whole numbers between " + min + " and " + max);
                 } //end else
             } //end try
@@ -98,9 +97,9 @@ public class Pig {
         return names; //return the names array
     }
 
-   /*
-        The play function consists of the dice rolling and a preliminary winning score check
-   */
+    /*
+         The play function consists of the dice rolling and a preliminary winning score check
+    */
     public static int play(String name, int maxScore, int loseATurn, int score, diceInterface d) {
         String goAgain;
         int turnScore = 0; //score of this turn
@@ -130,7 +129,6 @@ public class Pig {
         } while (goAgain.toLowerCase().startsWith("y")); //repeat rolls until something other than "y" is entered
         return turnScore; //return the current turns score
     }
-
 
     private static int nextPlayer(int playerNumber, String[] names) { //Compute who the next player is
 
