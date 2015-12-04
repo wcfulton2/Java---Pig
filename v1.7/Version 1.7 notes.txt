@@ -1,0 +1,4 @@
+- Added a displayScores function to display the current scores at the end of a turn.
+	- displayScores function called in playPig function
+
+- Added additional formatting to output
